@@ -219,6 +219,13 @@ html {
     border-bottom: 1px solid #ddd;
     margin-bottom: 15px;
 }
+footer small {
+    background-color: rgb(169, 169, 169);
+    padding: 20px;
+    width: 100%;
+    text-align-last: center;
+   
+}
 
 
 @media (max-width: 768px) {
@@ -233,7 +240,5 @@ html {
     }
     .col-3 {
         width: 100%;
-    
-
-    
+    }
 }
