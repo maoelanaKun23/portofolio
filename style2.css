@@ -1,0 +1,14 @@
+.col-5 {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.col-5 img {
+    width: 100%;
+}
+.col-5 a:hover img {
+    transform: scale(1.2);
+}
