@@ -143,9 +143,10 @@ section {
 .banner-center{
     width: 100% 380%;
     margin: 30px;
-
 }
-
+.banner-center img {
+    border-radius: 22%;
+}
 .banner p {
     font-size: 18px;
     color: #b7c0c0;
