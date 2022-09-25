@@ -1,189 +1,189 @@
-*{
+*{ /* Tampilan web memenuhi layar */
     padding: 0;
     margin:0;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand', sans-serif; /*CSS untuk Font*/
 
 }
 
-header {
+header { /*Untuk Navbar*/
    
     background-color: #bfdadaa4;
-    list-style-type: none;
-    overflow: hidden;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
+    list-style-type: none; /*Menghilangkan list di kiri teks */
+    overflow: hidden; /* Menyembunyikan konten */
+    top: 0; /*Mengatur navbar mentok atas*/
+    position: fixed; /* Elemen akan di tempat yang sama*/
+    width: 100%; /* Lebar navbar*/
+    z-index: 1; /* Mengatur Tumpukan elemen untuk di atas atau di bawah*/
 }
 
 header  h1 {
 
-    display: inline-block;
-    float: left;
-    padding: 15px 30px; 
+    display: inline-block; /* Supaya tetap horizontal*/
+    float: left; /* Mengapung di kiri*/
+    padding: 15px 30px; /* Mengatur atas bawah kiri kanan */
 }
 
 header h1 a {
-    transition: .3s;
-    color: black;
+    transition: .3s; /* transisi ketika di hover*/
+    color: black; /* Warna konten*/
 }
 
 header h1 a:hover {
-    color: rgb(0, 48, 238);
+    color: rgb(0, 48, 238); /* Kursor mengarah,konten akan berubah warna*/
 }
 
-header label i {
-    transition: .3s;
+header label i { /*x*/
+    transition: .3s; /* transisi ketika di hover*/
 }
-header label i:hover{
-    color: rgb(0, 48, 238);
-    cursor: pointer;
+header label i:hover{ /*x*/
+    color: rgb(0, 48, 238); /* Kursor mengarah,konten akan berubah warna*/
+    cursor: pointer; /* Kursor mengarah,kursor akan berubah bentuk*/
 }
 
-header ul {
-    float: right;
+header ul { 
+    float: right;  /* Mengapung di kanan*/
 
 }
 
 header ul li {
-    padding: 24px 24px;
-    display: inline-block;
+    padding: 24px 24px; /* Mengatur atas bawah kiri kanan */
+    display: inline-block; /* Supaya tetap horizontal*/
 }
 
 header ul li a {
-    transition: .3s;
-    color: black;
+    transition: .3s; /* transisi ketika di hover*/
+    color: black;  /* Warna konten*/
 }
 
 header ul li a:hover{
-    color: rgb(0, 48, 238);
+    color: rgb(0, 48, 238); /* Kursor mengarah,konten akan berubah warna*/
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none; /*Menghapus efek garis pada text*/
 }
 
-.container {
-    width: 95%;
-    margin: 0 auto;
+.container { /*Navbar*/ /*x*/
+    width: 95%; /*lebar navbar*/
+    margin: 0 auto; /*Tepi garis luar*/
 }
 
-.container::after {
+.container::after { /*Menghapus float , container mengikuti isi*/ /*x*/
     display: block;
     clear: both;
 }
 
-.mobile-menu {
+.mobile-menu { /*mengatur icon menu*/
     float: right;
     display: none;
-    padding: 24px;
+    padding: 24px; /*atas bawah kiri kanan menu icon*/
 
 }
 
 .mobile-menu :hover {
-    cursor: pointer;
+    cursor: pointer; /*Kursor berubah ketika mengenai menu*/
 }
-#check {
-    display: none;
+#check { 
+    display: none; /*Menghilangkan id check*/
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: -300px;
+    position: fixed; /*Posisi tetap*/
+    top: 0;        /*Mentok atas*/
+    bottom: 0;      /*Mentok bawah*/
+    left: -300px;  /*Sembunyi di kiri*/
     width: 300px;
     background-color:  rgba(68, 99, 222, 0.9) ;
-    transition: .3s;
+    transition: .3s; 
 }
 .sidebar ul li a{
-    color: #b7c0c0;
+    color: #b7c0c0; /*warna font*/
 }
 .sidebar ul li {
-    padding: 24px;
+    padding: 24px; /*Mengatur atas bawah kiri kanan*/
 }
-.sidebar ul li:hover {
+.sidebar ul li:hover { /*Ketika disentuh akan berwarna biru*/
     background-color: rgb(13, 159, 208);
     transition: .3s;
 }
-#check:checked ~ .sidebar {
-    left: 0;
-    z-index: 2;
+#check:checked ~ .sidebar { /*Ketika check bar menu ,sidebar muncul*/
+    left: 0; /*Kembali ke kanan */
+    z-index: 2; /*Supaya di atas elemen z-index: 1*/ 
 }
 
 section {
-    padding: 40px 0;
+    padding: 40px 0; /*Mengatur atas bawah banner*/
 
 }
 
 .banner {
     background: url('abs2.jpg');
-    height : 100%;
-    width: 100%;
+    height : 100%; /*Tinggi konten */
+    width: 100%; /*Lebar konten*/
     background-position: center;
     background-size: cover;
 }
-.ig {
+.ig { /*Mengarah ke instagram*/
     text-align: center;
     border: red;
 }
-.banner img {
+.banner img { /*Mengatur foto di banner*/
     width: 300px;
     margin: 10px;
     padding: 50px;
    
 }
-.banner h2 {
+.banner h2 { /*Mengatur teks yang ada di bawah foto*/
     margin-bottom: 10px;
     color: #b7c0c0;
 }
 .banner span {
-    color: rgb(255, 40, 40);
+    color: rgb(255, 40, 40); /*Tesk jalan warna*/
 }
-.banner-center{
+.banner-center{ /*Mengatur Tampilan banner-center*/
     width: 100% 380%;
     margin: 30px;
 }
 .banner-center img {
-    border-radius: 22%;
+    border-radius: 22%; /*Menumpulkan siku foto*/
 }
-.banner p {
+.banner p { /*Mengatur font banner*/
     font-size: 18px;
     color: #b7c0c0;
 }
 
-section h3 {
+section h3 { /*Mengatur H3 ke tengah*/
     padding-bottom: 20px;
     margin: 20px;
     position: relative;
     text-align: center;   
 }
-#about p {
-    text-align: justify;
-    text-indent: 30px;
-    line-height: 25px;
-    margin-bottom: 15px;
+#about p { /*Mengatur paragraf */
+    text-align: justify; /*Rata kiri kanan*/
+    text-indent: 30px; /*Mengatur kerapihan teks*/
+    line-height: 25px; /*Mengatur kerapihan teks*/
+    margin-bottom: 15px; /*Seperti enter*/
 }
 #Skills {
-    background-color:  #d3e2e2fd;;
+    background-color:  #d3e2e2fd;
 }
 
 #skills .bar {
-    height: 30px;
+    height: 30px; /*Ukuran  bar*/
     background-color: rgb(101, 151, 165);
     border: 1px solid #ddd;
-    margin: 5px 0 20px 0;
+    margin: 5px 0 20px 0; /*Jarak tulisan dan bar*/
    
 }
 .bar .nilai{
-    height: 30px;
+    height: 30px; /*Ukuran bar*/
     background-color: blue;
-    display: inline-block;
+    display: inline-block; /*Nilai di bar*/
     color: #fff;
-    text-align: center;
+    text-align: center; /*NIlai di tengah bar*/
 }
 .ps {
-    width:89%;
+    width:89%; /*Nilai bar*/
 }
 .skt {
     width:93%;
@@ -203,60 +203,60 @@ section h3 {
 .ptl {
     text-align: center;
 }
-.col-4 {
-    width: 25%;
-    box-sizing: border-box;
-    padding: 10px;
-    float: left;
-    text-align: center;
-    margin-bottom: 10px;
+.col-4 { 
+    width: 25%; /*Lebar*/
+    box-sizing: border-box; /*Supaya lebar tetap*/
+    padding: 10px;/*Jarak antar portofolio*/
+    float: left; /*Berjejer ke kiri*/
+    text-align: center; /*Teks di tengah*/
+    margin-bottom: 10px; /*Jarak antar portofolio dan teks*/
 }
 .col-4 img {
-    width: 100%;
+    width: 100%; /*Ukuran portofolio*/
 }
 .col-4 a:hover img {
-    transform: scale(1.2);
+    transform: scale(1.2); /*Ketika disentuh akan timbul*/
 }
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*Melembutkan transisi klik icon*/
 }
 .col-3 {
-    width: 33.33%;
-    box-sizing: border-box;
-    float: left;
-    text-align: center;
-    padding: 50px 10px;
+    width: 33.33%; /*Berjejer ke kiri sama rata*/
+    box-sizing: border-box; /*Lebar tetap*/
+    float: left; /* Berjejer ke kiri*/
+    text-align: center; /*Berada di tengah*/
+    padding: 50px 10px; /*Mengatur atas bawah kiri kanan*/
 }
 .col-3 h4 {
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 15px;
+    padding-bottom: 10px; /*Jarak tulisan yang atas bawah*/
+    border-bottom: 1px solid #ddd; /*Ada garis di bawah tulisan*/
+    margin-bottom: 15px; /*Mengatur batas sebelah bawah*/
 }
 
 
 .kotak20 {
-    padding: 10px;
+    padding: 10px; /*Mengatur ruang kotak20*/
 }  
 
 
 .iii{
-    margin-top: 5%;
-    text-align: center;
+    margin-top: 5%; /*Jarak konten dengan konten di atasnya*/
+    text-align: center; /*Teks di tengah*/
     background-color: rgb(160, 160, 160);
    
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*Ketika layar 768px maka : */
     .mobile-menu {
-        display: block;
+        display: block; /*Ini tampil*/
     }
     header ul {
-        display: none;
+        display: none; /*Ini hilang*/
     }
     .col-4 {
-        width: 25%;
+        width: 50%; /*Portofolio berjejer 2 ke kiri*/
     }
     .col-3 {
-        width: 100%;
+        width: 100%; /*Kontak lebar full*/
     }
 }
